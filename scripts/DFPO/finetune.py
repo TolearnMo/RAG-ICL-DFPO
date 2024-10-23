@@ -66,7 +66,7 @@ def data_preprocess(tokenizer,num_cores,args):
         instruction = tokenizer(f"<bos><start_of_turn>user\n{example['instruction'] + example['input']}<end_of_turn>\n<start_of_turn>model\n", add_special_tokens=False)  # add_special_tokens 不在开头加 special_tokens
         response = tokenizer(f"{example['output']}<end_of_turn>\n", add_special_tokens=False)
         input_ids = instruction["input_ids"] + response["input_ids"] + [tokenizer.eos_token_id]
-        attention_mask = instruction["attention_mask"] + response["attention_mask"] + [1]  # 因为eos token咱们也是要关注的所以 补充为1
+        attention_mask = instruction["attention_mask"] + response["attention_mask"] + [1]
         labels = [-100] * len(instruction["input_ids"]) + response["input_ids"] + [tokenizer.eos_token_id]  
         
         return {
