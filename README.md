@@ -26,7 +26,7 @@
     </ul>
 </p>
 
-<img src="./" alt="">
+<img src="./assets/RAG-ICL.tif" alt="RAG-ICL">
 
 
 
