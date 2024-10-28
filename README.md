@@ -25,8 +25,32 @@
         </li>
     </ul>
 </p>
+<h3>RAG-ICL Flowchart</h3>
+<p align="center">
+    <img src="assets/RAG-ICL.jpg" alt="RAG-ICL" width="60%">
+</p>
+<h3>DFPO Flowchart</h3>
+<p align="center">
+    <img src="assets/DFPO.png" alt="DFPO" width="50%">
+</p>
+<h3>DMCR Flowchart</h3>
+<p align="center">
+    <img src="assets/DMCR.png" alt="DMCR" width="50%">
+</p>
 
-<img src="./assets/RAG-ICL.tif" alt="RAG-ICL">
+<h2>Prerequisites</h2>
+<ul>
+    <li>Python 3.10 or higher</li>
+    <li>PyTorch</li>
+    <li>langchain</li>
+    <li>transformers</li>
+    <li>peft</li>
+    <li>bitsandbytes</li>
+    <li>accelerate</li>
+    <li>deepspeed</li>
+</ul>
 
+Install the required packages using:
+<pre><code>pip install -r requirements.txt</code></pre>
 
 
